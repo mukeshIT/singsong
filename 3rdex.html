@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>SINGSONG</title>
+
+	<style type="text/css">
+
+
+
+
+.rating {
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+}
+
+.rating > input{
+ display:none;
+}
+
+.rating > label {
+position: relative;
+width: 41px;
+    height: 155px;
+
+font-size: 15vw;
+color: #FFD700;
+cursor: pointer;
+}
+
+.rating > label::before{
+content: "\2605";
+position: absolute;
+opacity: 0;
+}
+
+
+		/* Layout */
+		body {
+			min-width: 630px;
+		}
+            #add{ background-color: gray;
+  
+    margin-bottom: 1px;
+}
+		#container {
+			padding-left: 200px;
+			padding-right: 200px;
+		}
+		
+		#container .column {
+			position: relative;
+			float: left;
+		}
+		
+		#center {
+			padding: 10px 20px;
+			width: 100%;
+		}
+		
+		#left {
+			width: 190px;
+			padding: 0 10px;
+			right: 240px;
+			margin-left: -100%;
+		}
+		
+		#right {
+		      width: 145px;
+			padding: 0 10px;
+			margin-right: -100%;
+		}
+		
+		#footer {
+			clear: both;
+		}
+		
+		/* IE hack */
+		* html #left {
+			left: 150px;
+		}
+
+		/* Make the columns the same height as each other */
+		#container {
+			overflow: hidden;
+		}
+
+		#container .column {
+			padding-bottom: 1001em;
+			margin-bottom: -1000em;
+		}
+
+		/* Fix for the footer */
+		* html body {
+			overflow: hidden;
+		}
+		
+		* html #footer-wrapper {
+			float: left;
+			position: relative;
+			width: 100%;
+			padding-bottom: 10010px;
+			margin-bottom: -10000px;
+			background: red;
+		}
+
+		/* Aesthetics */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		p {
+			color: white;
+		}
+
+		nav ul {
+			list-style-type: wavy;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: white;
+			text-decoration: none;
+		}
+
+		#header, #footer {
+			font-size: large;
+			padding: 0.3em;
+			background: black;
+		}
+
+		#left {
+			background: red;
+		}
+		
+		#right {
+			background: red;
+		}
+
+		#center {
+			background: yellow;
+		}
+
+		#container .column {
+			padding-top: 1em;
+		}
+		.lab{
+		font-size: 50px;
+}
+		
+	</style>
+	
+	<script type="text/javascript">
+	
+	var bodyText=["Music is the only language in which you cannot say a mean or sarcastic thing.",
+                  "Music is the language of the spirit. It opens the secret of life bringing peace, abolishing strife.",
+                  "Music washes away from the soul the dust of everyday life.",
+                  "Music is the art which is most nigh to tears and memory.",
+                  "One good thing about music, when it hits you, you feel no pain.",
+           "</p><p>How is it that music can, without words, evoke our laughter, our fears, our highest aspirations?.",
+                  "Music is good to the melancholy, bad to those who mourn, and neither good nor bad to the deaf.",
+ "<h3>WHAT IS MUSIC</h3><p>Music expresses that which cannot be put into words and that which cannot remain silent"]
+		function generateText(sentenceCount){
+			for (var i=0; i<sentenceCount; i++)
+			document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+		}
+	</script>	
+</head>
+
+<body>
+
+	<header id="header"><p>SINGSONG</p></header>
+
+	<div id="container">
+
+		<main id="center" class="column">
+			
+</head>
+<body>
+        <h1>TOP 10 SONG</h1>
+
+
+<a href="C:\Users\mukes\Desktop\html EX\form.html"> <button id="add" >ADD SONG</a></button>
+<table border="" bordercolor="Gray" align=" "width="100%" cellspacing="1" cellpadding="10"> 
+     
+       
+      <tr>
+            <th>ArtWork</th>
+            <th>SONG</th>
+            <th>ARTIST</th>
+            <th>Date of Release</th>
+            <th>Rate</th>
+            
+            
+        </tr>
+        <tr>
+          
+    <tr>
+            <td><img src="1.jpg" alt="" border=1 height=100 width=100></img></td>
+            <td> Despacito </td>
+            <td>Luis Fonsi ft. Daddy Yankee </td>
+            <td>Jan 2017</td>
+            <td> 
+<div class="rating">
+  
+  <input type="radio" name="rating" value="5" id="5"><label for="5" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="4" id="4"><label for="4" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="3" id="3"><label for="3" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="2" id="2"><label for="2" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="1" id="1"><label for="1" ><span class="lab">☆</span></label>
+</div>
+ </td>
+
+    <tr>
+            <td><img src="2.jpeg" alt="" border= height=100 width=100></img></td>
+            <td> Shape of You </td>
+            <td>Ed Sheeran</td>
+            <td>Jan 2017</td>
+            <td>
+<div class="rating">
+  
+  <input type="radio" name="rating" value="5" id="5"><label for="5" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="4" id="4"><label for="4" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="3" id="3"><label for="3" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="2" id="2"><label for="2" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="1" id="1"><label for="1" ><span class="lab">☆</span></label>
+</div> </td>
+
+    <tr>
+            <td><img src="3.jpg" alt="" border=3 height=100 width=100></img></td>
+            <td> See You Again </td>
+            <td>Wiz Khalifa ft.Charlie Puth</td>
+            <td>Mar 2015</td>
+            <td>
+<div class="rating">
+  
+  <input type="radio" name="rating" value="5" id="5"><label for="5" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="4" id="4"><label for="4" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="3" id="3"><label for="3" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="2" id="2"><label for="2" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="1" id="1"><label for="1" ><span class="lab">☆</span></label>
+</div> </td>
+
+    <tr>
+            <td><img src="4.jpg" alt="" border=4 height=100 width=100></img></td>
+            <td>  Uptown Funk </td>
+            <td>Mark Ronson ft.Bruno Mars</td>
+            <td>Nov 2014</td>
+            <td>
+<div class="rating">
+  
+  <input type="radio" name="rating" value="5" id="5"><label for="5" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="4" id="4"><label for="4" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="3" id="3"><label for="3" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="2" id="2"><label for="2" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="1" id="1"><label for="1" ><span class="lab">☆</span></label>
+</div> </td>
+
+    <tr>
+            <td><img src="5.jpg" alt="" border=5 height=100 width=100></img></td>
+            <td>  Dame Tu Cosita </td>
+            <td>El Chombo feat.Cutty Ranks</td>
+            <td>Apr 2018</td>
+            <td>
+<div class="rating">
+  
+  <input type="radio" name="rating" value="5" id="5"><label for="5" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="4" id="4"><label for="4" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="3" id="3"><label for="3" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="2" id="2"><label for="2" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="1" id="1"><label for="1" ><span class="lab">☆</span></label>
+</div> </td>
+
+    <tr>
+            <td><img src="6.jpg" alt="" border=6 height=100 width=100></img></td>
+            <td> Sugar </td>
+            <td>Maroon 5</td>
+            <td>jan 2021</td>
+            <td>
+<div class="rating">
+  
+  <input type="radio" name="rating" value="5" id="5"><label for="5" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="4" id="4"><label for="4" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="3" id="3"><label for="3" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="2" id="2"><label for="2" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="1" id="1"><label for="1" ><span class="lab">☆</span></label>
+</div> </td>
+
+    <tr>
+            <td><img src="nocap.png" alt="" border=7 height=100 width=100></img></td>
+            <td> NO CAP </td>
+            <td>Kr$na</td>
+            <td>jan 2022</td>
+            <td>
+<div class="rating">
+  
+  <input type="radio" name="rating" value="5" id="5"><label for="5" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="4" id="4"><label for="4" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="3" id="3"><label for="3" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="2" id="2"><label for="2" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="1" id="1"><label for="1" ><span class="lab">☆</span></label>
+</div> </td>
+
+    <tr>
+            <td><img src="7.jpg" alt="" border=8 height=100 width=100></img></td>
+            <td> Sorry </td>
+            <td>Justin Bieber </td>
+            <td>Apr 2018</td>
+            <td>
+<div class="rating">
+  
+  <input type="radio" name="rating" value="5" id="5"><label for="5" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="4" id="4"><label for="4" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="3" id="3"><label for="3" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="2" id="2"><label for="2" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="1" id="1"><label for="1" ><span class="lab">☆</span></label>
+</div> </td>
+
+    <tr>
+            <td><img src="8.jpg" alt="" border=9 height=100 width=100></img></td>
+            <td>  Counting Stars </td>
+            <td>OneRepublic</td>
+            <td>jan 2017</td>
+            <td>
+<div class="rating">
+  
+  <input type="radio" name="rating" value="5" id="5"><label for="5" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="4" id="4"><label for="4" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="3" id="3"><label for="3" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="2" id="2"><label for="2" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="1" id="1"><label for="1" ><span class="lab">☆</span></label>
+</div> </td>
+
+    <tr>
+            <td><img src="9.jpg" alt="" border=10 height=100 width=100></img></td>
+            <td> I'M READY </td>
+            <td>Raftaar Ft.Kr$na</td>
+            <td>Mar 2019</td>
+            <td>
+<div class="rating">
+  
+  <input type="radio" name="rating" value="5" id="5"><label for="5" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="4" id="4"><label for="4" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="3" id="3"><label for="3" ><span class="lab">☆</span></label>
+
+ 
+  <input type="radio" name="rating" value="2" id="2"><label for="2" ><span class="lab">☆</span></label>
+  <input type="radio" name="rating" value="1" id="1"><label for="1" ><span class="lab">☆</span></label>
+</div> </td>
+
+   
+<tr>
+          
+    </table>
+									
+		</main>
+
+		<nav id="left" class="column">
+			<h3>INDIAN MUSIC</h3>
+			<ul>
+				<li><a href="#"HIP HOP MUSIC</a></li>
+				<li><a href="#">POP</a></li>
+				<li><a href="#">ROCK</a></li>
+				<li><a href="#">JAZZ</a></li>
+				<li><a href="#">CLASSICAL MUSIC</a></li>
+                        <li><a href="#">‎ELECTRONIC MUSIC</a></li> 
+                        <li><a href="#">METAL MUSIC</a></li>
+                        <li><a href="#">RELIGIOUS MUSIC</a></li>
+                        <li><a href="#">TRADITIONAL & FOLK MUSIC</a></li>
+                        <li><a href="#">LATIN MUSIC</a></li>
+			</ul>
+			<h3>WORLDWIDE MUSIC</h3>
+			<ul>
+				<li><a href="#">HINDI</a></li>
+				<li><a href="#">PUNJABI</a></li>
+				<li><a href="#">ENGLISH</a></li>
+				<li><a href="#">SPANISH</a></li>
+		
+			</ul>
+
+
+
+		</nav>
+
+		<div id="right" class="column">
+			<h3>WHAT IS MUSIC</h3>
+			<p><script>generateText(1)</script></p>
+		</div>
+
+	</div>
+<h1>LOGIN</h1>
+ <link rel="stylesheet" href=""> 
+      
+    <style> 
+      
+        
+        input[type=text], 
+        input[type=password] { 
+            width: 100%; 
+            padding: 12px 40px; 
+            margin: 8px 0; 
+            display: inline-block; 
+            border: 1px solid #ccc; 
+            box-sizing: border-box; 
+        } 
+          
+         
+        button { 
+            background-color: lightgray; 
+            color: white; 
+            padding: 14px 20px; 
+            margin: 8px 0; 
+            border: none; 
+            cursor: pointer; 
+            width: 100%; 
+        } 
+  
+        
+        button:hover { 
+            opacity: 0.8; 
+        } 
+  
+         
+        .container { 
+            padding: 16px; 
+        } 
+      
+        .fontuser {
+            position: relative;
+        }
+          
+        .fontuser i{
+            position: absolute;
+            left: 15px;
+            top: 40px;
+            color: gray;
+        }
+          
+        .fontpassword {
+            position: relative;
+        }
+          
+        .fontpassword i{
+            position: absolute;
+            left: 15px;
+            top: 40px;
+            color: gray;
+        }
+    </style> 
+
+ <style> 
+        
+        input[type=text], 
+        input[type=password] { 
+            width: 100%; 
+            padding: 5px 20px; 
+            margin: 5px 10;
+            background-color: lightgray; 
+            display: inline-block; 
+            border: 10px solid #ccc; 
+            box-sizing: border-box; 
+        } 
+          
+         
+        button { 
+            background-color: yellow; 
+            color: black; 
+            padding: 14px 20px; 
+            margin: 8px 0; 
+            border: none; 
+            cursor: pointer; 
+            width: 100%; 
+        } 
+  
+        
+        button:hover { 
+            opacity: 1; 
+        } 
+  
+        
+        .container { 
+            padding: 10px; 
+        } 
+      
+        .fontuser {
+            position: relative;
+        }
+          
+        .fontuser i{
+            position: absolute;
+            left: 25px;
+            top: 45px;
+            color: gray;
+        }
+          
+        .fontpassword {
+            position: relative;
+        }
+          
+        .fontpassword i{
+            position: absolute;
+            left: 20px;
+            top: 40px;
+            color: gray;
+        }
+    </style> 
+</head>
+  
+<body> 
+    <div class="container"> 
+        <div class="fontuser">
+            <label><b>Username</b></label> 
+            <input type="text" 
+                    placeholder="Enter Username"
+                    name="uname" required> 
+            <i class="fa fa-user fa-lg"></i>
+        </div>
+          
+        <div class="fontpassword">
+            <label><b>Password</b></label> 
+            <input type="password"
+                    placeholder="Enter Password"
+                    name="psw" required> 
+            <i class="fa fa-key fa-lg"></i>
+        </div>     
+          
+        <button type="submit">Login</button> 
+        <input type="checkbox" checked="checked">
+                Remember me 
+    </div> 
+</body> 
+
+<div id="footer-wrapper">
+		<footer id="footer"><p>Footer...</p></footer>
+	</div>
+
+</body>
+
+</html>
